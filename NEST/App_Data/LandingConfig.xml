@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LandingConfig>
+  <!-- The title of this website -->
+  <SiteTitle></SiteTitle>
+  <Tagline></Tagline>
+  <!-- URL for your blog -->
+  <BlogLink></BlogLink>
+  <!-- URL for the RSS feed (preferably using Feedburner.com)  -->
+  <RssFeed></RssFeed>
+  <!-- To get your Twitter Anywhere API Key:
+        1) Go to https://dev.twitter.com/anywhere/apps/new
+        2) Register your app (Callback URL doesn't matter)
+        3) Copy your API Key here...
+    -->
+  <TwitterAnywhereAPIKey></TwitterAnywhereAPIKey>
+  <TwitterAccount></TwitterAccount>
+  <FacebookPage></FacebookPage>
+  <!-- Your Google Analytics account as in UA-22616491-2 -->
+  <GoogleAnalyticsAccount>UA-21892499-2</GoogleAnalyticsAccount>
+  <!-- website domain name -->
+  <WebsiteDomainName>patrickmurphy2012.com</WebsiteDomainName>
+  <!-- The promoted article is the default shown on the home page  -->
+  <PromotedArticleID>5</PromotedArticleID>
+</LandingConfig>

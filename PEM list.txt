@@ -1,0 +1,34 @@
+
+Home Page:
+
+- very different font used for the headline for news, social media
+- the lack of that box around the twitter and facebook feeds
+
+
+Sub pages:
+
+- Add Icons to top of individual issues pages
+- no subhead text on issues page
+
+
+
+Need content for FL District page
+Need images for home page slider
+
+
+
+
+
+
+
+
+For Reference:
+--------------
+Landing Page:
+http://aaems.com/clients/ImpactPolitics/Patrick_Murphy/PM_landing.html
+
+Internal Pages:
+http://aaems.com/clients/ImpactPolitics/Patrick_Murphy/PM_internal-issues.html
+
+Issues Submenu Page:
+http://aaems.com/clients/ImpactPolitics/Patrick_Murphy/PM_internal-story.html

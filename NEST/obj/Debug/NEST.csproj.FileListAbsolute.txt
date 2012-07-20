@@ -1,0 +1,49 @@
+C:\Users\russ\Desktop\Murphy-NEST\Murphy-NEST\Murphy-NEST\Murphy\NEST\NEST\bin\NEST.dll
+C:\Users\russ\Desktop\Murphy-NEST\Murphy-NEST\Murphy-NEST\Murphy\NEST\NEST\bin\NEST.pdb
+C:\Users\russ\Desktop\Murphy-NEST\Murphy-NEST\Murphy-NEST\Murphy\NEST\NEST\bin\EntityFramework.dll
+C:\Users\russ\Desktop\Murphy-NEST\Murphy-NEST\Murphy-NEST\Murphy\NEST\NEST\bin\EntityFramework.xml
+C:\Users\russ\Desktop\Murphy-NEST\Murphy-NEST\Murphy-NEST\Murphy\NEST\NEST\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\russ\Desktop\Murphy-NEST\Murphy-NEST\Murphy-NEST\Murphy\NEST\NEST\obj\Debug\NEST.dll
+C:\Users\russ\Desktop\Murphy-NEST\Murphy-NEST\Murphy-NEST\Murphy\NEST\NEST\obj\Debug\NEST.pdb
+C:\Visual Studio Projects\Murphy-NEST\NEST\bin\NEST.dll
+C:\Visual Studio Projects\Murphy-NEST\NEST\bin\NEST.pdb
+C:\Visual Studio Projects\Murphy-NEST\NEST\bin\EntityFramework.dll
+C:\Visual Studio Projects\Murphy-NEST\NEST\bin\EntityFramework.xml
+C:\Visual Studio Projects\Murphy-NEST\NEST\obj\Debug\ResolveAssemblyReference.cache
+C:\Visual Studio Projects\Murphy-NEST\NEST\obj\Debug\NEST.dll
+C:\Visual Studio Projects\Murphy-NEST\NEST\obj\Debug\NEST.pdb
+C:\VisualStudioProjects\Murphy-NEST\Murphy-NEST\NEST\bin\NEST.dll
+C:\VisualStudioProjects\Murphy-NEST\Murphy-NEST\NEST\bin\NEST.pdb
+C:\VisualStudioProjects\Murphy-NEST\Murphy-NEST\NEST\bin\EntityFramework.dll
+C:\VisualStudioProjects\Murphy-NEST\Murphy-NEST\NEST\bin\EntityFramework.xml
+C:\VisualStudioProjects\Murphy-NEST\Murphy-NEST\NEST\obj\Debug\ResolveAssemblyReference.cache
+C:\VisualStudioProjects\Murphy-NEST\Murphy-NEST\NEST\obj\Debug\NEST.dll
+C:\VisualStudioProjects\Murphy-NEST\Murphy-NEST\NEST\obj\Debug\NEST.pdb
+C:\Visual Studio Projects\Murphy-NEST\Murphy-NEST\Murphy-NEST\NEST\bin\NEST.dll
+C:\Visual Studio Projects\Murphy-NEST\Murphy-NEST\Murphy-NEST\NEST\bin\NEST.pdb
+C:\Visual Studio Projects\Murphy-NEST\Murphy-NEST\Murphy-NEST\NEST\bin\EntityFramework.dll
+C:\Visual Studio Projects\Murphy-NEST\Murphy-NEST\Murphy-NEST\NEST\bin\EntityFramework.xml
+C:\Visual Studio Projects\Murphy-NEST\Murphy-NEST\Murphy-NEST\NEST\obj\Debug\ResolveAssemblyReference.cache
+C:\Visual Studio Projects\Murphy-NEST\Murphy-NEST\Murphy-NEST\NEST\obj\Debug\NEST.dll
+C:\Visual Studio Projects\Murphy-NEST\Murphy-NEST\Murphy-NEST\NEST\obj\Debug\NEST.pdb
+C:\VisualStudioProjects\Murphy-NEST\NEST\bin\NEST.dll
+C:\VisualStudioProjects\Murphy-NEST\NEST\bin\NEST.pdb
+C:\VisualStudioProjects\Murphy-NEST\NEST\bin\EntityFramework.dll
+C:\VisualStudioProjects\Murphy-NEST\NEST\bin\EntityFramework.xml
+C:\VisualStudioProjects\Murphy-NEST\NEST\obj\Debug\ResolveAssemblyReference.cache
+C:\VisualStudioProjects\Murphy-NEST\NEST\obj\Debug\NEST.dll
+C:\VisualStudioProjects\Murphy-NEST\NEST\obj\Debug\NEST.pdb
+C:\VisualStudioProjects\Source\PatrickMurphy\PatrickMurphy\NEST\bin\NEST.dll
+C:\VisualStudioProjects\Source\PatrickMurphy\PatrickMurphy\NEST\bin\NEST.pdb
+C:\VisualStudioProjects\Source\PatrickMurphy\PatrickMurphy\NEST\bin\EntityFramework.dll
+C:\VisualStudioProjects\Source\PatrickMurphy\PatrickMurphy\NEST\bin\EntityFramework.xml
+C:\VisualStudioProjects\Source\PatrickMurphy\PatrickMurphy\NEST\obj\Debug\ResolveAssemblyReference.cache
+C:\VisualStudioProjects\Source\PatrickMurphy\PatrickMurphy\NEST\obj\Debug\NEST.dll
+C:\VisualStudioProjects\Source\PatrickMurphy\PatrickMurphy\NEST\obj\Debug\NEST.pdb
+C:\VisualStudioProjects\Active Projects\PatrickMurphy-071812\PatrickMurphy\NEST\bin\NEST.dll
+C:\VisualStudioProjects\Active Projects\PatrickMurphy-071812\PatrickMurphy\NEST\bin\NEST.pdb
+C:\VisualStudioProjects\Active Projects\PatrickMurphy-071812\PatrickMurphy\NEST\bin\EntityFramework.dll
+C:\VisualStudioProjects\Active Projects\PatrickMurphy-071812\PatrickMurphy\NEST\bin\EntityFramework.xml
+C:\VisualStudioProjects\Active Projects\PatrickMurphy-071812\PatrickMurphy\NEST\obj\Debug\ResolveAssemblyReference.cache
+C:\VisualStudioProjects\Active Projects\PatrickMurphy-071812\PatrickMurphy\NEST\obj\Debug\NEST.dll
+C:\VisualStudioProjects\Active Projects\PatrickMurphy-071812\PatrickMurphy\NEST\obj\Debug\NEST.pdb

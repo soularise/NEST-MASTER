@@ -1,0 +1,51 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="main-inner">
+    <div id="side-nav" class="inner-shadow">
+        <div class="contribute">
+            <a href=""><img src="@Url.Content("~/Content/Content/theme-pm/images/contribute.gif")" /></a>
+        </div>
+        <div class="join-side">
+            <ul>
+                <li><input id="firstname" type="text" /></li>
+                <li><input id="lastname" type="text" /></li>
+                <li><input id="email" type="text" /></li>
+                <li><input id="zipcode" type="text" /></li>
+                <li><input type="submit" value="" /></li>    
+            </ul>
+        </div>
+        <div class="you-tube">
+            <img src="@Url.Content("~/Content/Content/themes/pm-base/images/video.gif")" class="side-title" />
+        </div>
+        <div class="news">
+            <img src="@Url.Content("~/Content/Content/themes/pm-base/images/news.gif")" class="side-title" />
+            <ul>
+                <li><a href="">skjsd kjds jdjd</a></li>
+                <li><a href="">skjsd kjds jdjdsk sldlsd kd kdslsssdkls</a></li>
+            </ul>
+        </div>
+        <div class="facebook">
+            <img src="@Url.Content("~/Content/Content/theme-pm/images/facebook.gif")" class="side-title" />
+        </div>
+        <div class="twitter">
+            <img src="@Url.Content("~/Content/Content/theme-pm/images/twitter.gif")" class="side-title" />
+        </div>
+        <div class="social">
+            <img src="@Url.Content("~/Content/Content/theme-pm/images/social.gif")" class="side-title" />
+            <div>
+            <a href="" class="facebook-href"><img src="@Url.Content("~/Content/theme-pm/images/social-icons.gif")" /></a>
+            <a href="" class="twitter-href"><img src="@Url.Content("~/Content/theme-pm/images/social-icons.gif")" /></a>
+            <a href="" class="you-tube-href"><img src="@Url.Content("~/Content/theme-pm/images/social-icons.gif")" /></a>
+            <a href="" class="href"><img src="@Url.Content("~/Content/theme-pm/images/social-icons.gif")" /></a>
+            </div>
+        </div>
+        
+    </div>
+    <div id="main-content" class="inner-shadow">
+        @RenderBody()
+    </div>
+
+                
+    <br class="clear" />
+</div>

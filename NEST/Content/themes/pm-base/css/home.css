@@ -1,0 +1,114 @@
+﻿#main-content
+{
+    background-color: #003162;
+    background:url('../images/home-bg-tile.png') repeat-y;
+}    
+
+.home-facebook-container
+{
+    float:left;
+    width:400px;
+    }
+.home-center-container
+{
+    float:left;
+    width:300px;
+    }
+.home-video-container
+{
+    float:left;
+    width:230px;
+    }    
+    
+.joinourteam
+{
+    float:left;
+    width:311px;
+    height:311px;
+    background:url('../images/home-form.png') no-repeat;
+    position:relative;
+    }
+    
+.home-main
+{
+    margin-left:330px;
+    width:651px;
+    height:311px;
+    background:url('../images/homme-main.png') no-repeat;
+        
+    }
+    
+
+.container
+{
+    float:left;
+    }
+.container1
+{
+    }
+    
+    
+    .joinourteam a
+    {
+        position:absolute;
+        bottom:10px;
+        right:14px;
+        width:279px;
+        height:57px;
+        overflow:hidden;
+        
+        }
+        
+    .joinourteam a img
+    {
+        margin-top:-57px;
+    }    
+    .joinourteam a:hover img
+    {
+        margin-top:0;
+    }
+    
+    
+    .joinfields
+    {
+        position:absolute;
+        top:60px;
+        right:47px;
+    }
+    .joinfields li
+    {
+        display:block;
+        padding:0;
+        padding-bottom:10px;
+    }
+    
+    .joinfields input[type="text"]
+    {
+        position:relative;
+        right:0;
+        border:0;
+        width:150px;
+        height:22px;
+        clear:both;
+    }
+    
+    .joinfields input[type="submit"]
+    {
+        position:relative;
+        right:2px;
+        top:-3px;
+        cursor:pointer;
+        float:right;
+        border:0;
+        background:url('../images/home-join.gif') no-repeat;
+        width:70px;
+        height:31px;
+        clear:both;
+    }
+    .joinfields input[type="submit"]:hover
+    {
+        background:url('../images/home-join.gif') 0 100% no-repeat;
+        width:70px;
+        height:31px;
+        clear:both;
+    }

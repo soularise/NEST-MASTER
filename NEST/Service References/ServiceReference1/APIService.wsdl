@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://ngpsoftware.com/ngpapi/WebService" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://ngpsoftware.com/ngpapi/WebService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://ngpsoftware.com/ngpapi/WebService">
+      <s:element name="DontWorry">
+        <s:complexType />
+      </s:element>
+      <s:element name="DontWorryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DontWorryResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="processRequestWithCreds">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RequestXML" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="transType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="credentialString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="processRequestWithCredsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="processRequestWithCredsResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="DontWorrySoapIn">
+    <wsdl:part name="parameters" element="tns:DontWorry" />
+  </wsdl:message>
+  <wsdl:message name="DontWorrySoapOut">
+    <wsdl:part name="parameters" element="tns:DontWorryResponse" />
+  </wsdl:message>
+  <wsdl:message name="processRequestWithCredsSoapIn">
+    <wsdl:part name="parameters" element="tns:processRequestWithCreds" />
+  </wsdl:message>
+  <wsdl:message name="processRequestWithCredsSoapOut">
+    <wsdl:part name="parameters" element="tns:processRequestWithCredsResponse" />
+  </wsdl:message>
+  <wsdl:message name="DontWorryHttpGetIn" />
+  <wsdl:message name="DontWorryHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="processRequestWithCredsHttpGetIn">
+    <wsdl:part name="RequestXML" type="s:string" />
+    <wsdl:part name="transType" type="s:string" />
+    <wsdl:part name="credentialString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="processRequestWithCredsHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="DontWorryHttpPostIn" />
+  <wsdl:message name="DontWorryHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="processRequestWithCredsHttpPostIn">
+    <wsdl:part name="RequestXML" type="s:string" />
+    <wsdl:part name="transType" type="s:string" />
+    <wsdl:part name="credentialString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="processRequestWithCredsHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:portType name="ApiServiceSoap">
+    <wsdl:operation name="DontWorry">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Test method.</wsdl:documentation>
+      <wsdl:input message="tns:DontWorrySoapIn" />
+      <wsdl:output message="tns:DontWorrySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="processRequestWithCreds">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;RequestXML&lt;/b&gt; Valid XML request, as defined by our XML Schemas (XSD)&lt;br/&gt;&lt;b&gt;transType&lt;/b&gt; Name of API method&lt;br/&gt;&lt;b&gt;credentialString&lt;/b&gt; Encrypted credential string, obtained from Technical Support&lt;br/&gt;</wsdl:documentation>
+      <wsdl:input message="tns:processRequestWithCredsSoapIn" />
+      <wsdl:output message="tns:processRequestWithCredsSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ApiServiceHttpGet">
+    <wsdl:operation name="DontWorry">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Test method.</wsdl:documentation>
+      <wsdl:input message="tns:DontWorryHttpGetIn" />
+      <wsdl:output message="tns:DontWorryHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="processRequestWithCreds">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;RequestXML&lt;/b&gt; Valid XML request, as defined by our XML Schemas (XSD)&lt;br/&gt;&lt;b&gt;transType&lt;/b&gt; Name of API method&lt;br/&gt;&lt;b&gt;credentialString&lt;/b&gt; Encrypted credential string, obtained from Technical Support&lt;br/&gt;</wsdl:documentation>
+      <wsdl:input message="tns:processRequestWithCredsHttpGetIn" />
+      <wsdl:output message="tns:processRequestWithCredsHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ApiServiceHttpPost">
+    <wsdl:operation name="DontWorry">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Test method.</wsdl:documentation>
+      <wsdl:input message="tns:DontWorryHttpPostIn" />
+      <wsdl:output message="tns:DontWorryHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="processRequestWithCreds">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;RequestXML&lt;/b&gt; Valid XML request, as defined by our XML Schemas (XSD)&lt;br/&gt;&lt;b&gt;transType&lt;/b&gt; Name of API method&lt;br/&gt;&lt;b&gt;credentialString&lt;/b&gt; Encrypted credential string, obtained from Technical Support&lt;br/&gt;</wsdl:documentation>
+      <wsdl:input message="tns:processRequestWithCredsHttpPostIn" />
+      <wsdl:output message="tns:processRequestWithCredsHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ApiServiceSoap" type="tns:ApiServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DontWorry">
+      <soap:operation soapAction="http://ngpsoftware.com/ngpapi/WebService/DontWorry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="processRequestWithCreds">
+      <soap:operation soapAction="http://ngpsoftware.com/ngpapi/WebService/processRequestWithCreds" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ApiServiceSoap12" type="tns:ApiServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DontWorry">
+      <soap12:operation soapAction="http://ngpsoftware.com/ngpapi/WebService/DontWorry" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="processRequestWithCreds">
+      <soap12:operation soapAction="http://ngpsoftware.com/ngpapi/WebService/processRequestWithCreds" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ApiServiceHttpGet" type="tns:ApiServiceHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="DontWorry">
+      <http:operation location="/DontWorry" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="processRequestWithCreds">
+      <http:operation location="/processRequestWithCreds" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ApiServiceHttpPost" type="tns:ApiServiceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="DontWorry">
+      <http:operation location="/DontWorry" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="processRequestWithCreds">
+      <http:operation location="/processRequestWithCreds" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ApiService">
+    <wsdl:port name="ApiServiceSoap" binding="tns:ApiServiceSoap">
+      <soap:address location="https://www.myngp.com/ngpapi/APIService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ApiServiceSoap12" binding="tns:ApiServiceSoap12">
+      <soap12:address location="https://www.myngp.com/ngpapi/APIService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ApiServiceHttpGet" binding="tns:ApiServiceHttpGet">
+      <http:address location="http://www.myngp.com/ngpapi/APIService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ApiServiceHttpPost" binding="tns:ApiServiceHttpPost">
+      <http:address location="http://www.myngp.com/ngpapi/APIService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

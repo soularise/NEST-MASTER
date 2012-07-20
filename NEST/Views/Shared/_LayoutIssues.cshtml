@@ -1,0 +1,52 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+#main-content{background-image:none;background-color: #ffffff;}
+#main-content p{padding:10px;}
+#side-nav a{margin-top:5px;}
+</style>
+<div class="main-inner">
+    <div id="side-nav" class="inner-shadow">
+        
+        
+        <ul class="icons">
+            <li><img src="../../Content/theme-pm/images/issues.gif" /></li>
+            <li>
+                <a href="@Url.Content("~/Issues/IssuesDetail/18")"><img src="@Url.Content("~/Content/theme-pm/images/icons/icon-up.png")" />Economy and Jobs</a></li>
+            <li>
+                <a href="@Url.Content("~/Issues/IssuesDetail/19")"><img src="@Url.Content("~/Content/theme-pm/images/icons/icon-heart.png")")" />Social Security & Medicare</a></li>
+            <li>
+                <a href="@Url.Content("~/Issues/IssuesDetail/20")"><img src="@Url.Content("~/Content/theme-pm/images/icons/icon-finance.png")" />Reducing National Debt</a></li>
+            <li>
+                <a href="@Url.Content("~/Issues/IssuesDetail/22")"><img src="@Url.Content("~/Content/theme-pm/images/icons/icon-medical.png")" />Health Care Reform</a></li>
+            <li>
+                <a href="@Url.Content("~/Issues/IssuesDetail/23")" class="two-lines"><img src="@Url.Content("~/Content/theme-pm/images/icons/icon-leaf.png")" />Environment & Energy <br />Independence</a></li>
+            <li>
+                <a href="@Url.Content("~/Issues/IssuesDetail/24")"><img src="@Url.Content("~/Content/theme-pm/images/icons/icon-balance.png")" />Equality & Civil Rights</a></li>
+            <li>
+                <a href="@Url.Content("~/Issues/IssuesDetail/25")"><img src="@Url.Content("~/Content/theme-pm/images/icons/icon-check.png")" />Women's Rights</a></li>
+            <li>
+                <a href="@Url.Content("~/Issues/IssuesDetail/26")"><img src="@Url.Content("~/Content/theme-pm/images/icons/icon-gov.png")" />Smarter Governing</a></li>
+            <li>
+                <a href="@Url.Content("~/Issues/IssuesDetail/27")"><img src="@Url.Content("~/Content/theme-pm/images/icons/icon-globe.png")" />Afghanistan</a></li>
+            <li>
+                <a href="@Url.Content("~/Issues/IssuesDetail/28")"><img src="@Url.Content("~/Content/theme-pm/images/icons/icon-globe.png")")" />Protecting Israel</a></li>
+            <li>
+                <a href="@Url.Content("~/Issues/IssuesDetail/29")"><img src="@Url.Content("~/Content/theme-pm/images/icons/icon-globe.png")")" />Iran</a></li>
+            <li>
+                <a href="@Url.Content("~/Issues/IssuesDetail/30")" class="two-lines"><img src="@Url.Content("~/Content/theme-pm/images/icons/icon-us.png")")" />Immigration & <br />Border Security</a></li>
+            <li>
+                <a href="@Url.Content("~/Issues/IssuesDetail/31")"><img src="@Url.Content("~/Content/theme-pm/images/icons/icon-education.png")")" />Education</a></li>
+        </ul>
+        
+    </div>
+    <div id="main-content" class="inner-shadow">
+        <div id="InnerPad">
+        @RenderBody()
+        </div>
+    </div>
+
+                
+    <br class="clear" />
+</div>

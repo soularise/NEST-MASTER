@@ -1,0 +1,486 @@
+
+body{
+	
+	background:url(../images/BG-sliver.jpg) ;
+	background-repeat:repeat-x;
+	background-color:##006599;
+}
+
+h1{color:#009acd;padding-left:10px;}
+p {padding-left:10px;padding-right:10px;} 
+
+#Table_01 {
+	width:1000px;
+	text-align:center;
+  	margin-left: auto;
+  	margin-right: auto;	
+}
+
+
+
+#BTL-Header-logo_ {
+	position:relative;
+	left:0px;
+	top:0px;
+	width:333px;
+	height:245px;
+	display:inline;
+	float:left;
+}
+
+/* ---------- TOP NAVIGATION ----------- */
+
+#top-nav_ {
+	position:relative;
+	top:0px;
+	float:right;
+	width:667px;
+	height:40px;
+	display:inline;	
+}
+
+#home-off_ {
+	position:relative;
+	top:0px;
+	width:92px;
+	height:40px;
+	display:inline;
+	float:left;	
+	background-image: url(../images/nav/home_off.jpg);
+}
+#home-off_ img{background-image: url(../images/nav/home_off.jpg);border:0px;}
+#home-off_ img:hover{background-image: url(../images/nav/home_on.jpg);}
+
+#about-off_ {
+	position:relative;
+	top:0px;
+	width:111px;
+	height:40px;
+	display:inline;
+	float:left;		
+	background-image: url(../images/nav/about_off.jpg);
+}
+#about-off_ img{background-image: url(../images/nav/about_off.jpg);border:0px;}
+#about-off_ img:hover{background-image: url(../images/nav/about_on.jpg);}
+
+#news-off_ {
+	position:relative;
+	top:0px;
+	width:98px;
+	height:40px;
+	display:inline;	
+	float:left;	
+	background-image: url(../images/nav/news_off.jpg);
+}
+#news-off_ img{background-image: url(../images/nav/news_off.jpg);border:0px;}
+#news-off_ img:hover{background-image: url(../images/nav/news_on.jpg);}
+
+#join-off_ {
+	position:relative;
+	top:0px;
+	width:86px;
+	height:40px;
+	display:inline;	
+	float:left;	
+	background-image: url(../images/nav/join_off.jpg);
+}
+#join-off_ img{background-image: url(../images/nav/join_off.jpg);border:0px;}
+#join-off_ img:hover{background-image: url(../images/nav/join_on.jpg);}
+
+#contact-off_ {
+	position:relative;
+	top:0px;
+	width:117px;
+	height:40px;
+	display:inline;	
+	float:left;	
+	background-image: url(../images/nav/contact_off.jpg);
+}
+#contact-off_ img{background-image: url(../images/nav/contact_off.jpg);border:0px;}
+#contact-off_ img:hover{background-image: url(../images/nav/contact_on.jpg);}
+
+#contribute-off_ {
+	position:relative;
+	top:0px;
+	width:163px;
+	height:40px;
+	display:inline;	
+	float:left;	
+	background-image: url(../images/nav/contribute_off.jpg);
+}
+#contribute-off_ img{background-image: url(../images/nav/contribute_off.jpg);border:0px;}
+#contribute-off_ img:hover{background-image: url(../images/nav/contribute_on.jpg);}
+
+
+
+
+
+#BTL-Slider_ {
+	position:relative;
+	left:0px;
+	top:0px;
+	width:667px;
+	height:267px;
+	display:inline;	
+	float:right;
+}
+
+
+
+
+/* ---------- SIDE NAVIGATION ----------- */
+
+#What-You-Can-Do-off_ {
+	position:relative;
+	left:0px;
+	top:0px;
+	width:333px;
+	height:62px;
+	display:block;	
+	float:left;
+	background-image: url(../images/sidenav/What-You-Can-Do_off.jpg);
+}
+
+#What-You-Can-Do-off_ img{background-image: url(../images/sidenav/What-You-Can-Do_off.jpg);border:0px;}
+#What-You-Can-Do-off_ img:hover{background-image: url(../images/sidenav/What-You-Can-Do_on.jpg);}
+
+
+#sidenav-top-fill_ {
+	position:relative;
+	left:0px;
+	top:0px;
+	width:333px;
+	height:19px;
+	display:block;	
+	float:left;
+}
+#sidenav-top-fill_ img{background-image: url(../images/sidenav/sidenav-top-fill.jpg);border:0px;}
+
+#Health-Effects-off_ {
+	position:relative;
+	left:0px;
+	top:0px;
+	width:333px;
+	height:44px;
+	display:block;	
+	float:left;	
+	background-image: url(../images/sidenav/Health-Effects_off.jpg);
+}
+#Health-Effects-off_ img{background-image: url(../images/sidenav/Health-Effects_off.jpg);border:0px;}
+#Health-Effects-off_ img:hover{background-image: url(../images/sidenav/Health-Effects_on.jpg);}
+
+
+#BTL-HOME-PAGE-09_ {
+	position:relative;
+	left:0px;
+	top:0px;
+	width:667px;
+	height:302px;
+	display:inline;	
+	float:right;
+	background-color:#ffffff;
+	text-align:left;
+}
+
+
+#Economic-Effects-off_ {
+	position:relative;
+	left:0px;
+	top:0px;
+	width:333px;
+	height:38px;
+	display:block;	
+	float:left;	
+	background-image: url(../images/sidenav/Economic-Effects_off.jpg);
+}
+#Economic-Effects-off_ img{background-image: url(../images/sidenav/Economic-Effects_off.jpg);border:0px;}
+#Economic-Effects-off_ img:hover{background-image: url(../images/sidenav/Economic-Effects_on.jpg);}
+
+
+#FPL-Fraud_ {
+	position:relative;
+	left:0px;
+	top:0px;
+	width:333px;
+	height:43px;
+	display:block;	
+	float:left;	
+	background-image: url(../images/sidenav/FPL-Fraud_off.jpg);
+}
+#FPL-Fraud_ img{background-image: url(../images/sidenav/FPL-Fraud_off.jpg);border:0px;}
+#FPL-Fraud_ img:hover{background-image: url(../images/sidenav/FPL-Fraud_on.jpg);}
+
+
+#Why-Bury-off_ {
+	position:relative;
+	left:0px;
+	top:0px;
+	width:333px;
+	height:36px;
+	display:block;	
+	float:left;	
+	background-image: url(../images/sidenav/Why-Bury_off.jpg);
+}
+#Why-Bury-off_ img{background-image: url(../images/sidenav/Why-Bury_off.jpg);border:0px;}
+#Why-Bury-off_ img:hover{background-image: url(../images/sidenav/Why-Bury_on.jpg);}
+
+
+#WhoSupports_ {
+	position:relative;
+	left:0px;
+	top:0px;
+	width:333px;
+	height:41px;
+	display:block;	
+	float:left;	
+	background-image: url(../images/sidenav/WhoSupports_off.jpg);
+}
+#WhoSupports_ img{background-image: url(../images/sidenav/WhoSupports_off.jpg);border:0px;}
+#WhoSupports_ img:hover{background-image: url(../images/sidenav/WhoSupports_on.jpg);}
+
+#sidenav-bottom-fill_ {
+	position:relative;
+	left:0px;
+	top:0px;
+	width:333px;
+	height:21px;
+	display:block;	
+	float:left;	
+}
+#sidenav-bottom-fill_ img{background-image: url(../images/sidenav/sidenav-bottom-fill.jpg);border:0px;}
+
+
+/* ---------- SOCIAL LINKS ----------- */
+
+#SocialLinks_ {
+	position:relative;
+	left:0px;
+	top:0px;
+	width:333px;
+	height:60px;
+	display:inline;	
+	float:left;
+}
+
+
+#FollowUs_ {
+	position:relative;
+	left:0px;
+	top:0px;
+	width:140px;
+	height:60px;
+	display:inline;	
+	float:left;	
+}
+#FollowUs_ img{background-image: url(../images/social/FollowUs.jpg);border:0px;}
+
+
+#facebook-off_ {
+	position:relative;
+	left:0px;
+	top:0px;
+	width:33px;
+	height:60px;
+	display:inline;	
+	float:left;	
+	background-image: url(../images/social/facebook_off.jpg);
+}
+#facebook-off_ img{background-image: url(../images/social/facebook_off.jpg);border:0px;}
+#facebook-off_ img:hover{background-image: url(../images/social/facebook_on.jpg);}
+
+
+#twitter-off_ {
+	position:relative;
+	left:0px;
+	top:0px;
+	width:32px;
+	height:60px;
+	display:inline;	
+	float:left;	
+	background-image: url(../images/social/twitter_off.jpg);
+}
+#twitter-off_ img{background-image: url(../images/social/twitter_off.jpg);border:0px;}
+#twitter-off_ img:hover{background-image: url(../images/social/twitter_on.jpg);}
+
+
+#YouTube-off_ {
+	position:relative;
+	left:0px;
+	top:0px;
+	width:32px;
+	height:60px;
+	display:inline;	
+	float:left;	
+	background-image: url(../images/social/YouTube_off.jpg);
+}
+#YouTube-off_ img{background-image: url(../images/social/YouTube_off.jpg);border:0px;}
+#YouTube-off_ img:hover{background-image: url(../images/social/YouTube_on.jpg);}
+
+
+#flickr-off_ {
+	position:relative;
+	left:0px;
+	top:0px;
+	width:31px;
+	height:60px;
+	display:inline;	
+	float:left;	
+	background-image: url(../images/social/flickr_off.jpg);
+}
+#flickr-off_ img{background-image: url(../images/social/flickr_off.jpg);border:0px;}
+#flickr-off_ img:hover{background-image: url(../images/social/flickr_on.jpg);}
+
+#BTL-HOME-PAGE-26_ {
+	position:relative;
+	left:0px;
+	top:0px;
+	width:65px;
+	height:60px;
+	display:inline;	
+	float:right;		
+}
+#BTL-HOME-PAGE-26_ img{background-image: url(../images/social/BTL-HOME-PAGE_26.jpg);border:0px;}
+
+
+#JoinMailingList_ {
+	position:relative;
+	left:0px;
+	top:0px;
+	width:333px;
+	height:274px;
+	display:inline;	
+	float:left;	
+	background-image: url(../images/JoinMailingList_off.jpg);
+}
+#JoinMailingList_ img{background-image: url(../images/JoinMailingList_off.jpg);border:0px;}
+#JoinMailingList_ img:hover{background-image: url(../images/JoinMailingList_on.jpg);}
+
+#Letter-To-Editor_ {
+	position:relative;
+	left:0px;
+	top:0px;
+	width:334px;
+	height:274px;
+	display:inline;	
+	float:left;	
+	background-image: url(../images/Letter-To-Editor_off.jpg);
+}
+#Letter-To-Editor_ img{background-image: url(../images/Letter-To-Editor_off.jpg);border:0px;}
+#Letter-To-Editor_ img:hover{background-image: url(../images/Letter-To-Editor_on.jpg);}
+
+#Write-Officials_ {
+	position:relative;
+	left:0px;
+	top:0px;
+	width:333px;
+	height:274px;
+	display:inline;	
+	float:left;	
+	background-image: url(../images/Write-Officials_off.jpg);
+}
+#Write-Officials_ img{background-image: url(../images/Write-Officials_off.jpg);border:0px;}
+#Write-Officials_ img:hover{background-image: url(../images/Write-Officials_on.jpg);}
+
+#Lower-Home-_ {
+	position:relative;	
+	width:1000px;
+	min-height:500px;
+	background-color:#ffffff;
+	bottom:0px;
+	display:block;	
+	float:left;		
+}
+
+
+/* ---------- SUBPAGE STYLES ----------- */
+
+#Subpage-ImageHeader_ {
+	position:relative;
+	left:0px;
+	top:0px;
+	width:667px;
+	height:205px;
+	background-image: url(../images/Subpage-ImageHeader.jpg);border:0px;
+	float:right;
+	display:inline;
+	text-align:left;
+	
+}
+#SocialLinks_subpage {
+	position:relative;
+	left:0px;
+	top:0px;
+	width:333px;
+	height:60px;
+	display:inline;	
+	float:left;
+}
+#Subpage_body {
+	position:relative;
+	left:0px;
+	top:0px;
+	width:667px;
+	min-height:1043px;
+	display:inline;	
+	float:right;
+	background-color:#ffffff;
+}
+
+#Subpage-joinMailinglist-off {
+	position:relative;
+	width:202px;
+	height:205px;
+	display:inline;	
+	float:right;	
+	z-index:10;
+	background-image: url(../images/subpage/JoinMailingList_off.jpg);
+}
+#Subpage-joinMailinglist-off img{background-image: url(../images/subpage/JoinMailingList_off.jpg);border:0px;}
+#Subpage-joinMailinglist-off img:hover{background-image: url(../images/subpage/JoinMailingList_on.jpg);}
+
+#Subpage-letter-off {
+	position:relative;
+	left:0px;
+	top:0px;
+	width:333px;
+	height:224px;
+	display:inline;	
+	float:left;		
+	background-image: url(../images/subpage/Subpage_letter_off.jpg);
+}
+#Subpage-letter-off img{background-image: url(../images/subpage/Subpage_letter_off.jpg);border:0px;}
+#Subpage-letter-off img:hover{background-image: url(../images/subpage/Subpage_letter_on.jpg);}
+
+#Subpage-WriteOfficials-off {
+	position:relative;
+	left:0px;
+	top:0px;
+	width:333px;
+	height:203px;
+	display:inline;	
+	float:left;		
+	background-image: url(../images/subpage/Subpage_WriteOfficials_off.jpg);
+}
+#Subpage-WriteOfficials-off img{background-image: url(../images/subpage/Subpage_WriteOfficials_off.jpg);border:0px;}
+#Subpage-WriteOfficials-off img:hover{background-image: url(../images/subpage/Subpage_WriteOfficials_on.jpg);}
+
+
+#InTheNews_ {
+	position:relative;
+	left:0px;
+	top:0px;
+	width:333px;
+	height:251px;
+	display:inline;	
+	float:left;		
+	background-image: url(../images/subpage/InTheNews.jpg);border:0px;
+}
+#Lower-Subpage-_ {
+	position:relative;	
+	width:1000px;
+	min-height:500px;
+	background-color:#ffffff;
+	bottom:0px;
+	display:block;	
+	float:left;		
+}

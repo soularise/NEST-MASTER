@@ -1,0 +1,102 @@
+﻿@model IEnumerable<NEST.Models.ContentBody>
+@{
+    Layout = "~/Views/Shared/_SiteMasterSubpageLayout.cshtml";
+    ViewBag.Title = "Contact";
+}
+
+<style>
+#main-content p{padding-bottom:2px;padding-top:2px;}
+
+#main-content ul {
+    /*giving OL's LIs generated numbers*/
+    list-style:disc outside none;
+    margin-bottom:10px;
+}
+#main-content li {
+    /*giving UL's LIs generated disc markers*/
+    
+    display:list-item;
+    width:550px;
+    padding-left:0px;
+    margin-left:50px;
+    
+}
+#main-content h1{}
+#main-content h2,h3{padding-left:10px;padding-top:15px;}
+
+</style>
+<h1>Women for Murphy</h1>
+
+<div style="width:100%; margin-top:20px;"></div>
+
+  
+
+
+        <div id="WomenFormLeft">
+        @{
+        foreach (var item in Model)
+        {
+            if (item.Title == "PHOTOABOVEFORM")
+            {
+                
+                
+            }else{
+                <h2>@Html.DisplayFor(model => item.Title)</h2>
+                @Html.Raw(item.BodyText.Replace("[NO HEADER]", ""))
+            }
+            }
+        }        
+        </div>
+
+        <div id="WomenFormRight">
+        @{
+        foreach (var item in Model)
+        {
+            if (item.Title == "PHOTOABOVEFORM")
+            {
+                @Html.Raw(item.BodyText)
+                
+            }
+            else
+            {
+
+            }
+        }
+        }  
+            <h3 style="margin-top:10px;">Sign up below to join Women for Patrick Murphy</h3>
+            <fieldset style="margin-left:15px;">
+            <div class="editor-label">First Name</div>
+            <div class="editor-field"><input id="FirstName2" type="text" /></div>
+
+            <div class="editor-label">Last Name</div>
+            <div class="editor-field"><input id="LastName2" type="text" /></div>
+
+            <div class="editor-label">Email</div>
+            <div class="editor-field"><input id="Email2" type="text" /></div>
+
+            <div class="editor-label">Zip Code</div>
+            <div class="editor-field"><input id="ZipCode2" type="text" /></div>
+
+            <div class="editor-field"><br /><input type="image" id="BtnJoin2" value="Join" src="@Url.Content("~/Content/theme-default/images/btn-submit.png")" /></div>    
+            <script type="text/javascript">
+                $('#BtnJoin2').click(function () {
+                    var em2 = $('#Email2').val();
+                    if (!_UValidEmail(em2)) {
+                        alert('Enter a valid email address');
+                        return false;
+                    }
+                    var fin2 = $('#FirstName2').val();
+                    var lan2 = $('#LastName2').val();
+                    var zip2 = $('#ZipCode2').val();
+                    $.post('/join', { FirstName: fin2, LastName: lan2, Email: em2, ZipCode: zip2 });
+                    alert('Thank you for joining the campaign. You will hear from us soon.');
+                });
+            </script>            
+            </fieldset>
+        </div>
+
+
+
+
+
+

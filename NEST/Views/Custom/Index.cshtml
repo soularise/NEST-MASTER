@@ -1,0 +1,17 @@
+﻿@model NEST.Models.ContentBody
+@{
+    Layout = "~/Views/Shared/_SiteMasterSubpageLayout.cshtml";
+    ViewBag.Title = Model.Title;
+}
+
+
+<h2>@Html.DisplayFor(model => model.Title)</h2>
+
+@Html.Raw(Model.BodyText)          
+
+<iframe width="650" height="600" src="@Model.MediaSourceURL" frameborder="0" scrolling="no" style="overflow:auto; float:left; display:inline-block;margin-bottom:20px;"></iframe>
+
+
+
+
+

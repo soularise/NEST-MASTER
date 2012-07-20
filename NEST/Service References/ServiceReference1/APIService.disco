@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://www.myngp.com/ngpapi/APIService.asmx?wsdl" docRef="http://www.myngp.com/ngpapi/APIService.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="https://www.myngp.com/ngpapi/APIService.asmx" xmlns:q1="http://ngpsoftware.com/ngpapi/WebService" binding="q1:ApiServiceSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="https://www.myngp.com/ngpapi/APIService.asmx" xmlns:q2="http://ngpsoftware.com/ngpapi/WebService" binding="q2:ApiServiceSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

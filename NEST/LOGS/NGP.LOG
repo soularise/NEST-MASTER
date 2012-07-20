@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><EmailSignUpResponse xmlns="http://ngpsoftware.com/NGP.Services.UI/OnlineContribService"><EmailSignUpResult>true</EmailSignUpResult></EmailSignUpResponse></soap:Body></soap:Envelope>
+Log Entry : 9:34:36 PM Thursday, April 26, 2012
+  :
+  :Pragma: no-cache
+Content-Length: 400
+Cache-Control: no-cache
+Content-Type: text/xml; charset=utf-8
+Date: Fri, 27 Apr 2012 01:34:30 GMT
+Expires: -1
+Set-Cookie: BIGipServerservices_myngp_com_https_01_pool=cuZ0ujorshORBwJLbVPAN5git1L1/moJ7FekJ+EAptQuG6XO3fWkxpFGjkrNtfZlmEtlTh+5ZCKDbA==; path=/
+Server: Microsoft-IIS/6.0
+X-AspNet-Version: 2.0.50727
+X-Powered-By: ASP.NET
+
+
+-------------------------------
+
+Log Entry : 9:34:36 PM Thursday, April 26, 2012
+  :
+  :OK
+-------------------------------

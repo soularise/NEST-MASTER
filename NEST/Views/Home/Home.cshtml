@@ -1,0 +1,146 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Home Page";
+}
+
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+<div class="main-inner">
+    <div class="joinourteam inner-shadow radius">
+
+        <ul class="joinfields">
+            <li><input id="FirstName" type="text" /></li>
+            <li><input id="LastName" type="text" /></li>
+            <li><input id="Email" type="text" /></li>
+            <li><input id="ZipCode" type="text" /></li>
+            <li><input type="submit" value="" id="BtnJoin"/></li>    
+        </ul>
+        <a href="@Url.Content("https://www.patrickmurphy2012.com/contribute")"><img src="@Url.Content("~/Content/theme-pm/images/home-contribute.gif")" /></a>
+        <script type="text/javascript">
+            $('#BtnJoin').click(function () {
+                var em = $('#Email').val();
+                if (!_UValidEmail(em)) {
+                    alert('Enter a valid email address');
+                    return false;
+                }
+                var fin = $('#FirstName').val();
+                var lan = $('#LastName').val();
+                var zip = $('#ZipCode').val();
+                $.post('/join', { FirstName: fin, LastName: lan, Email: em, ZipCode: zip });
+                alert('Thank you for joining the campaign. You will hear from us soon.');
+            });
+        </script>
+    </div>
+    <div class="home-main inner-shadow radius">
+        <div id="imageslider">
+            <div id="wrapper">
+                <div class="slider-wrapper theme-default">
+                    <div class="ribbon"></div>
+                    <div id="slider" class="nivoSlider">
+                        
+                        <!-- old lady-->
+                        <a href="@Url.Content("~/news")"><img src="@Url.Content("~/Content/theme-pm/images/rotate/rotate-5.jpg")" alt=""  /></a> 
+                        
+                        <!--new shots table w kids-->
+                        <a href="@Url.Content("~/about")"><img src="@Url.Content("~/Content/theme-pm/images/rotate/rotate-8.jpg")" alt=""  /></a>
+
+                        <!--economy-->
+                        <a href="@Url.Content("http://www.youtube.com/watch?v=SB0CWzORHb8&feature=plcp&context=C3179603UDOEgsToPDskIq_xWTrlBwNpe9Gh3cDXEf")"><img src="@Url.Content("~/Content/theme-pm/images/rotate/rotate-2.jpg")" alt=""  /></a>
+                        
+                        <!--family talk-->
+                        <a href="@Url.Content("~/news")"><img src="@Url.Content("~/Content/theme-pm/images/rotate/rotate-4.jpg")" alt=""  /></a>
+                        
+                        <!--new shots green single-->
+                        <a href="@Url.Content("~/about")"><img src="@Url.Content("~/Content/theme-pm/images/rotate/rotate-10.jpg")" alt=""  /></a>
+
+                        <!--beach-->
+                        <a href="@Url.Content("~/news")"><img src="@Url.Content("~/Content/theme-pm/images/rotate/rotate-3.jpg")" alt=""  /></a>
+                        
+                        <!--environment-->
+                        <a href="@Url.Content("http://www.youtube.com/watch?v=zAwuHJNEGx4&feature=plcp&context=C3d4297eUDOEgsToPDskJxKy1YhUiB16_yGIpIOlws")"><img src="@Url.Content("~/Content/theme-pm/images/rotate/rotate-1.jpg")" alt=""  /></a>
+                   
+                        <!--new shots walking w older people-->
+                        <a href="@Url.Content("~/about")"><img src="@Url.Content("~/Content/theme-pm/images/rotate/rotate-12.jpg")" alt=""  /></a>
+                        
+                        <!--israel-->
+                        <a href="@Url.Content("~/news")"><img src="@Url.Content("~/Content/theme-pm/images/rotate/rotate-6.jpg")" alt=""  /></a>
+
+
+                        <!--new shots office w guy-->
+                        <a href="@Url.Content("~/about")"><img src="@Url.Content("~/Content/theme-pm/images/rotate/rotate-9.jpg")" alt=""  /></a>
+
+                        <!--new shots lighthouse-->
+                        <a href="@Url.Content("~/about")"><img src="@Url.Content("~/Content/theme-pm/images/rotate/rotate-11.jpg")" alt=""  /></a>
+
+ 						
+ 						
+                    </div>
+                </div>
+	        </div>
+        </div>
+    </div>
+</div>
+
+<div class="main-inner">
+    <div id="main-content" class="inner-shadow radius">
+        <div class="container home-left-container">
+            <img src="@Url.Content("~/Content/theme-pm/images/SocialNewsHead.png")" style="padding-bottom:15px;" />
+        @RenderPage("~/views/shared/_InTheNewsLowerLeft.cshtml")
+        </div>
+        
+        <div class="container home-social-container">
+        <img src="@Url.Content("~/Content/theme-pm/images/SocialMediaHead.png")" style="padding-bottom:20px;" />
+            <div style="padding-left:20px;padding-top:20px;"><iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2FPatrickMurphyforCongress&amp;width=260&amp;height=285&amp;colorscheme=light&amp;show_faces=true&amp;border_color=white&amp;stream=false&amp;header=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:260px; height:285px;" allowTransparency="true" ></iframe></div>
+        
+             <div style="padding-left:15px;padding-top:60px;"><script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+            <script>
+                new TWTR.Widget({
+                    version: 2,
+                    type: 'profile',
+                    rpp: 1,
+                    interval: 30000,
+                    width: 260,
+                    height: 80,
+                    theme: {
+                        shell: {
+                            background: '#ffffff',
+                            color: '#000099'
+                        },
+                        tweets: {
+                            background: '#ffffff',
+                            color: '#000000',
+                            links: '#0740eb'
+                        }
+                    },
+                    features: {
+                        scrollbar: false,
+                        loop: false,
+                        live: true,
+                        behavior: 'all'
+                    }
+                }).render().setUser('MurphyforUSRep').start();
+            </script></div>       
+        
+        <div id="SocialIconGroup">
+            <div  class="social">
+                <img src="@Url.Content("~/Content/theme-pm/images/socialFollow.png")" style="padding-bottom:10px;"/>
+                <div>
+                <a href="http://www.facebook.com/PatrickMurphyforCongress" class="facebook-href"><img src="@Url.Content("~/Content/theme-pm/images/social-icons.png")" /></a>
+                <a href="http://twitter.com/#!/murphyforusrep" class="twitter-href"><img src="@Url.Content("~/Content/theme-pm/images/social-icons.png")" /></a>
+                <a href="http://www/youtube.com/PMurphyForCongress?feature=mhum" class="you-tube-href"><img src="@Url.Content("~/Content/theme-pm/images/social-icons.png")" /></a>
+                <a href="http://www.flickr.com/photos/patrickmurphyforcongress/" class="href"><img src="@Url.Content("~/Content/theme-pm/images/social-icons.png")" /></a>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+
+        <div class="container home-video-container">
+        <img src="@Url.Content("~/Content/theme-pm/images/SocialVideoHead.png")" align="left" style="padding-bottom:20px;" />
+        @RenderPage("~/views/shared/_PartialVideoRoll.cshtml")
+        </div>
+    </div>
+</div>
+

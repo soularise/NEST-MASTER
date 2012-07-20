@@ -1,0 +1,128 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+#main-content{background-image:none;background-color: #ffffff;}
+#main-content p{padding:10px;}
+
+
+</style>
+
+<div class="main-inner">
+    <div id="side-nav" class="inner-shadow">
+        <div class="contribute">
+            <a href="@Url.Content("https://www.patrickmurphy2012.com/contribute")"><img src="@Url.Content("~/Content/theme-pm/images/contribute.gif")" /></a>
+        </div>
+        <div class="join-side">
+            <ul>
+                <li><input id="FirstName" type="text" /></li>
+                <li><input id="LastName" type="text" /></li>
+                <li><input id="Email" type="text" /></li>
+                <li><input id="ZipCode" type="text" /></li>
+                <li><input type="submit" value="" id="BtnJoin"/></li>    
+            </ul>
+        </div>
+        <script type="text/javascript">
+            $('#BtnJoin').click(function () {
+                var em = $('#Email').val();
+                if (!_UValidEmail(em)) {
+                    alert('Enter a valid email address');
+                    return false;
+                }
+                var fin = $('#FirstName').val();
+                var lan = $('#LastName').val();
+                var zip = $('#ZipCode').val();
+                $.post('/join', { FirstName: fin, LastName: lan, Email: em, ZipCode: zip });
+                alert('Thank you for joining the campaign. You will hear from us soon.');
+            });
+        </script>
+        <div class="you-tube">
+            <img src="@Url.Content("~/Content/theme-pm/images/video.gif")" class="side-title" />
+             @{           
+                 NEST.Models.NESTV1Entities db2 = new NEST.Models.NESTV1Entities();
+                 NEST.Models.ContentBody content = db2.ContentBodies.Single(c => c.ContentSection_ID == 17 && c.SortOrder == 1);
+
+                 if (content.MediaSourceURL.Contains("youtube"))
+                 {   
+                    <iframe width="200" height="150"  src="@content.MediaSourceURL" frameborder="0" allowfullscreen></iframe>
+                 }
+                else
+                {
+                <div style="padding-left:20px;">@Html.Raw(content.TeaserText);</div>
+                }                
+
+                <p>@content.Title</p>
+                
+
+            }
+
+        
+        <!--
+            <iframe width="200" height="150" src="http://www.youtube.com/embed/zAwuHJNEGx4?rel=0" frameborder="0" allowfullscreen></iframe>
+            <p>Patrick Murphy on the Environment</p>
+        -->
+        </div>
+        <div class="news">
+            <img src="@Url.Content("~/Content/theme-pm/images/news.gif")" class="side-title" />
+            <ul>
+
+            <li><a href="@Url.Content("~/news/NewsDetails/3")">PRESS ALERT: West Sides with Lobbyists and Hedge Fund Managers</a></li>
+            <li><a href="@Url.Content("~/news/NewsDetails/5")">West Vote Against Payroll Tax Cut Extension Shows Continued Betrayal of the Middle Class</a></li>
+
+            </ul>
+        </div>
+        <div class="facebook">
+            <img src="@Url.Content("~/Content/theme-pm/images/facebook.gif")" class="side-title" />
+            <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2FPatrickMurphyforCongress&amp;width=200&amp;height=300&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=false&amp;header=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:300px; background-color:#ffffff;" allowTransparency="true"></iframe>
+        </div>
+        <div class="twitter" style="margin-bottom:7px;">
+            <img src="@Url.Content("~/Content/theme-pm/images/twitter.gif")" class="side-title" />
+            <div style="padding-left:20px;"><script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+            <script>
+                new TWTR.Widget({
+                    version: 2,
+                    type: 'profile',
+                    rpp: 1,
+                    interval: 30000,
+                    width: 200,
+                    height: 130,
+                    theme: {
+                        shell: {
+                            background: '##0033CC',
+                            color: '#cccccc'
+                        },
+                        tweets: {
+                            background: '#ffffff',
+                            color: '#000000',
+                            links: '#0740eb'
+                        }
+                    },
+                    features: {
+                        scrollbar: false,
+                        loop: false,
+                        live: true,
+                        behavior: 'all'
+                    }
+                }).render().setUser('MurphyforUSRep').start();
+            </script></div>
+        </div>
+        <div class="social">
+            <img src="@Url.Content("~/Content/theme-pm/images/social.gif")" class="side-title" style="margin-bottom:7px;" />
+            <div>
+            <a href="http://www.facebook.com/PatrickMurphyforCongress" class="facebook-href"><img src="@Url.Content("~/Content/theme-pm/images/social-icons.gif")" /></a>
+            <a href="http://www.twitter.com/#!/MurphyforUSRep" class="twitter-href"><img src="@Url.Content("~/Content/theme-pm/images/social-icons.gif")" /></a>
+            <a href="http://www/youtube.com/PMurphyForCongress?feature=mhum" class="you-tube-href"><img src="@Url.Content("~/Content/theme-pm/images/social-icons.gif")" /></a>
+            <a href="http://www.flickr.com/photos/patrickmurphyforcongress/" class="href"><img src="@Url.Content("~/Content/theme-pm/images/social-icons.gif")" /></a>
+            </div>
+        </div>
+        
+    </div>
+    <div id="main-content" class="inner-shadow">
+        <div id="InnerPad">
+        @RenderBody()
+        </div>
+    </div>
+
+                
+    <br class="clear" />
+</div>

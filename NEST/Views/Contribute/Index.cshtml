@@ -1,0 +1,36 @@
+﻿@model NEST.Models.ContentBody
+@{
+    ViewBag.Title = "Contribute";
+    Layout = "~/Views/Shared/_SiteMasterSubpageLayout.cshtml";
+    if (Model.BodyText.Contains("[NO HEADER]"))
+    {
+        ViewBag.Title = "";
+    }    
+}
+<style>
+#main-content p{padding-bottom:2px;padding-top:2px;}
+</style>
+<h1>@ViewBag.Title</h1>
+<h2>@Html.DisplayFor(model => model.Title)</h2>
+<br />
+<h3>@Html.DisplayFor(model => model.SubHeader)</h3>
+<div style="padding-left:75px;">
+@if (Model.BodyText.Length > 100){
+    @Html.Raw(Model.BodyText.Replace("[NO HEADER]", ""))
+}
+else
+{
+    <h3>@Html.Raw(Model.BodyText.Replace("[NO HEADER]", ""))</h3>
+    }
+</div>
+
+@{
+    var thisFrame = "";
+
+    thisFrame = Model.IFrameURL;   
+  
+    
+}
+
+<iframe src="@thisFrame" width="700" height="1700"></iframe>
+

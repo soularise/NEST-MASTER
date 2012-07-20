@@ -1,0 +1,40 @@
+﻿
+<div id="CampaignVideosContent" >
+ @{           
+     NEST.Models.NESTV1Entities db2 = new NEST.Models.NESTV1Entities();
+
+
+     var contentbodies = db2.ContentBodies.Where(c => c.ContentSection_ID == 17).OrderBy(s => s.SortOrder);
+     contentbodies.ToList();     
+
+
+    int j = 1;
+    foreach (var mediaItem in contentbodies) 
+
+{
+    if(j <= 3)
+    {
+
+        if (mediaItem.MediaSourceURL.Contains("youtube"))
+        {   
+            <iframe width="200" height="" src="@mediaItem.MediaSourceURL" frameborder="0" allowfullscreen></iframe>
+        }
+        else
+        {
+            @Html.Raw(mediaItem.TeaserText);
+        }
+     
+     
+        <br />
+        @mediaItem.Title
+        <br /><br />   
+     
+        j++;
+    }
+}
+}
+
+
+
+
+</div>

@@ -1,0 +1,11 @@
+﻿@{
+    Layout = "~/Views/Shared/_SiteMasterSubpageLayout.cshtml";
+    ViewBag.Title = "About";
+}
+@model NEST.Models.ContentBody
+
+<h1>@Html.DisplayFor(model => model.Title)</h1>
+
+@Html.Raw(Model.BodyText)          
+
+

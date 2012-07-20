@@ -1,0 +1,187 @@
+﻿#main-content
+{
+    background-color: #003162;
+    background:url('../images/home-bg-tile.png') repeat-y;
+}    
+
+.home-left-container
+{
+    float:left;
+    width:380px;
+    padding:20px;
+    padding-top:5px;
+    }
+#main-content h1
+{
+    color: #003399;
+    font-size: 14pt;
+    font-weight: normal;
+    background-image:none;
+    padding-left:0px;
+    padding-bottom:10px;
+}
+
+.home-left-container h2
+{
+    color: #003399;
+    font-size: 12pt;
+    font-weight: bold;
+}
+    
+.home-social-container
+{
+    float:left;
+    width:310px;
+
+    padding-left:10px;
+    padding-top:5px;
+    background:url('../images/homeSocialBG.png') no-repeat;
+    }
+    
+    
+.home-video-container
+{
+    float:left;
+    width:200px;
+padding-top:5px;
+   font:normal 8pt arial;
+   padding-bottom:12px;
+   color:#ffffff; 
+   text-align:center;   
+   margin-left:15px;
+    }    
+.home-video-container h1
+{
+    color:#ffffff;
+    float:left;
+}
+
+.joinourteam
+{
+    float:left;
+    width:311px;
+    height:311px;
+    background:url('../images/home-form.png') no-repeat;
+    position:relative;
+    }
+    
+.home-main
+{
+    margin-left:330px;
+    width:651px;
+    height:311px;
+    background:url('../images/homme-main.png') no-repeat;
+        
+    }
+    
+
+.container
+{
+    float:left;
+}
+    
+.joinourteam a
+{
+    position:absolute;
+    bottom:10px;
+    right:14px;
+    width:279px;
+    height:57px;
+    overflow:hidden;
+ }
+        
+.joinourteam a img
+{
+    margin-top:-57px;
+}    
+.joinourteam a:hover img
+{
+    margin-top:0;
+}
+.joinfields
+{
+    position:absolute;
+    top:58px;
+    right:40px;
+}
+.joinfields li
+{
+    display:block;
+    margin:0;
+    padding:0;
+    padding-bottom:.9em;
+    text-align:right;
+    clear:both;
+}
+.joinfields li + li + li
+{  
+    padding-bottom:.8em; 
+}
+    
+.joinfields input[type="text"]
+{
+    margin:0;
+    padding:0 .5em;
+    position:relative;
+    border:0;
+    width:150px;
+    height:25px;
+}
+    
+.joinfields input[type="submit"]
+{
+    position:relative;
+    right:0;
+    top:-3px;
+    cursor:pointer;
+    float:right;
+    border:0;
+    background:url('../images/home-join.gif') no-repeat;
+    width:70px;
+    height:31px;
+    clear:both;
+}
+.joinfields input[type="submit"]:hover
+{
+    background:url('../images/home-join.gif') 0 100% no-repeat;
+    width:70px;
+    height:31px;
+    clear:both;
+}
+
+
+
+#SocialIconGroup .social
+{
+    padding-top:40px;
+}
+#SocialIconGroup .social > div
+{
+    clear:both;
+    display:block;
+    width:150px;
+    position:relative;
+    height:80px;
+    margin:auto;
+    }
+#SocialIconGroup .social a 
+{   
+    position:absolute;
+    overflow:hidden;
+    height:38px;
+    width:34px;
+    display:block;
+}
+#SocialIconGroup.social a{ left:0;}
+#SocialIconGroup .social a > img{margin-left:0;}
+#SocialIconGroup .social a + a{ left:38px;}
+#SocialIconGroup .social a + a > img{margin-left:-40px;}
+#SocialIconGroup .social a + a + a{left:75px;}
+#SocialIconGroup .social a + a + a > img{margin-left:-80px;}
+#SocialIconGroup .social a + a + a + a{left:113px;}
+#SocialIconGroup .social a + a + a + a > img{margin-left:-122px;}
+#SocialIconGroup .social a:hover img{
+    position:absolute;
+    top:-39px;
+    left:0;
+}
