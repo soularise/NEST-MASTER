@@ -1,0 +1,24 @@
+﻿@model NEST.Models.ContentBody
+@{
+    Layout = "~/Views/Shared/_SiteMasterSubpageLayout.cshtml";
+    ViewBag.Title = Model.Title;
+}
+
+
+<h2>@Html.DisplayFor(model => model.Title)</h2>
+
+@Html.Raw(Model.BodyText)          
+
+@if(Model.MediaSourceURL != ""){
+
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="700" height="400" id="ssidx"><embed src="http://cdn.smugmug.com/ria/ShizamSlides-2012031404.swf" flashVars="AlbumID=23831009&AlbumKey=94RgDr&transparent=true&bgColor=&borderThickness=&borderColor=&useInside=&endPoint=&mainHost=cdn.smugmug.com&VersionNos=2012031404&width=400&height=400&clickToImage=true&captions=false&showThumbs=false&autoStart=true&showSpeed=true&pageStyle=black&showButtons=true&randomStart=false&randomize=true&splash=http%3A%2F%2Fwww.smugmug.com%2Fimg%2Fria%2FShizamSlides%2Fsmugmug_black.png&splashDelay=0&crossFadeSpeed=350" width="700" height="400" wmode="transparent" type="application/x-shockwave-flash" allowScriptAccess="always" allowNetworking="all" ></embed></object>
+        
+    <a href="@Model.MediaSourceURL" target="new" onclick="@Model.MediaSourceURL'); return false;">Click here to open downloadable images gallery</a>
+
+
+    }
+    
+
+
+
+

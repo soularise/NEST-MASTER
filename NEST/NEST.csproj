@@ -78,7 +78,7 @@
     <Compile Include="Controllers\Website\AccomplishmentsController.cs" />
     <Compile Include="Controllers\NEST\AccountController.cs" />
     <Compile Include="Controllers\NEST\AdminController.cs" />
-    <Compile Include="Controllers\Website\CustomController.cs" />
+    <Compile Include="Controllers\Website\CampaignController.cs" />
     <Compile Include="Controllers\Website\WomenForMurphyController.cs" />
     <Compile Include="Controllers\Website\FloridaController.cs" />
     <Compile Include="Controllers\Website\EconomicEffectsController.cs" />
@@ -1434,7 +1434,7 @@
     <Content Include="Views\Contribute\Index.cshtml" />
     <Content Include="Views\WomenForMurphy\WomenThankYou.cshtml" />
     <Content Include="Views\WomenForMurphy\Index.cshtml" />
-    <Content Include="Views\Custom\Index.cshtml" />
+    <Content Include="Views\Campaign\Index.cshtml" />
     <Content Include="Views\Home\Custom.cshtml" />
   </ItemGroup>
   <ItemGroup>
